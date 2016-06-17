@@ -1,0 +1,88 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="matanga">
+<head >
+	<title >Matanga!</title >
+	<link href="../libs/bootstrap/dist/css/bootstrap.min.css"
+	      rel="stylesheet" >
+	<link href="main.css"
+	      rel="stylesheet" >
+</head >
+
+<body >
+
+<div class="container">
+    
+    <!--<button  ng-click="ngLog(buildMatanga(classicArray))">Label</button>-->
+    
+<table>
+    <tr>
+        <td>
+            <div ng-controller="MatangaCtrl" ng-init="shuffle(classicArray)">
+
+                <table class="myTable table-condensed">
+                    <tr>
+                        <td colspan="6"><img src="logo.png" alt="Matanga!" class="logo"></td>
+                    </tr>
+                    <tr ng-repeat="row in (buildMatanga(classicArray))">
+                        <td ng-repeat="cell in row.split(',')">{{cell}}</td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+        <td class="divider"></td>
+        <td>
+            <div ng-controller="MatangaCtrl" ng-init="shuffle(classicArray)">
+
+                <table class="myTable table-condensed">
+                    <tr>
+                        <td colspan="6"><img src="logo.png" alt="Matanga!" class="logo"></td>
+                    </tr>
+                    <tr ng-repeat="row in (buildMatanga(classicArray))">
+                        <td ng-repeat="cell in row.split(',')">{{cell}}</td>
+                    </tr>
+                </table>
+
+            </div>
+        </td>
+    </tr>
+    <tr><td colspan="3"><div class="divider"></div></td></tr>
+    <tr>
+        <td>
+            <div ng-controller="MatangaCtrl" ng-init="shuffle(classicArray)">
+
+                <table class="myTable table-condensed">
+                    <tr>
+                        <td colspan="6"><img src="logo.png" alt="Matanga!" class="logo"></td>
+                    </tr>
+                    <tr ng-repeat="row in (buildMatanga(classicArray))">
+                        <td ng-repeat="cell in row.split(',')">{{cell}}</td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+        <td class="divider"></td>
+        <td>
+            <div ng-controller="MatangaCtrl" ng-init="shuffle(classicArray)">
+
+                <table class="myTable table-condensed">
+                    <tr>
+                        <td colspan="6"><img src="logo.png" alt="Matanga!" class="logo"></td>
+                    </tr>
+                    <tr ng-repeat="row in (buildMatanga(classicArray))">
+                        <td ng-repeat="cell in row.split(',')">{{cell}}</td>
+                    </tr>
+                </table>
+
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+    
+  </div>  
+    
+<script src="../libs/angular/angular.min.js" ></script >
+<script src="main.js"></script>
+</body >
+</html >
